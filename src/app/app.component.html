@@ -4,7 +4,7 @@
 
       <div class="row d-flex">
         <div class="col-md-10">
-          <input #inputFile (change)="onChange($event)" class="form-control" type="file" />
+          <input #inputFile (change)="onChange($event)" accept=".xlsx, .xlsm, .xlsb, .xltx" class="form-control" type="file" />
         </div>
         <div class="col-md-2 d-flex justify-content-end">
           <button (click)="removeData()" class="btn btn-danger">Remove Data</button>
